@@ -13,9 +13,11 @@ const routes = [
 		component: EventList,
 	},
 	{
-		path: '/event',
+		//dynamic route:
+		path: '/event/:eventId',
 		name: 'event-show',
 		component: EventShow,
+		props: true,
 	},
 	{
 		path: '/event/create',
@@ -26,6 +28,7 @@ const routes = [
 
 const router = new VueRouter({
 	routes,
+	mode: 'history', //this is disabling # in url
 });
 
 export default router;

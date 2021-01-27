@@ -1,0 +1,52 @@
+{
+	"events": [
+		{
+			"id": 1,
+			"title": "Beach cleanup",
+			"date": "Jan 27 2021",
+			"time": "10:00",
+			"location": "Virginia Beach",
+			"description": "Let's clean up this beach",
+			"organizer": "Vi",
+			"category": "sustainability",
+			"attendees": [
+				{
+					"id": "abc123",
+					"name": "LibertySky"
+				},
+				{
+					"id": "abd124",
+					"name": "Sava"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"title": "BBQ Party",
+			"date": "Jan 29 2021",
+			"time": "19:00",
+			"location": "Arenas del Caribe",
+			"description": "Let's make BBQ & swimming pool party",
+			"organizer": "LibertySky",
+			"category": "sustainability",
+			"attendees": [
+				{
+					"id": "abc123",
+					"name": "Blythe"
+				},
+				{
+					"id": "abd124",
+					"name": "Vi"
+				},
+				{
+					"id": "abe125",
+					"name": "Sava"
+				},
+				{
+					"id": "abf126",
+					"name": "Rocky"
+				}
+			]
+		}
+	]
+}

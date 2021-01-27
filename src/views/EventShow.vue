@@ -1,11 +1,13 @@
 <template>
   <div>
-    <h2>Show event #1</h2>
+    <h2>Show event {{ eventId }}</h2>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["eventId"],
+};
 </script>
 
 <style scoped>
