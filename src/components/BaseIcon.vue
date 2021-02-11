@@ -1,7 +1,7 @@
 <template>
   <div class="icon-wrapper">
     <svg class="icon" :width="width" :height="height">
-      <use v-bind="{ 'xlink:href': 'InlineSprite.svg#' + name }" />
+      <use v-bind="{ 'xlink:href': 'IconsSprite.svg#' + name }" />
     </svg>
     <slot></slot>
   </div>
@@ -37,8 +37,9 @@ export default {
     stroke-width: 1;
     stroke-linecap: round;
     stroke-linejoin: round;
-    fill: none;
-    margin-right: 5px;
+    // fill: none;
+
+    margin-right: 7px;
   }
 }
 </style>

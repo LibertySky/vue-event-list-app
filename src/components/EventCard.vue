@@ -4,7 +4,9 @@
     <div>
       <span>@{{ event.time }} on {{ event.date }}</span>
       <h3>{{ event.title }}</h3>
-      <BaseIcon name="users"> {{ event.attendees.length }} attending </BaseIcon>
+      <base-icon name="user">
+        {{ event.attendees.length }} attending
+      </base-icon>
     </div>
   </router-link>
 </template>
