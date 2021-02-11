@@ -35,8 +35,8 @@ export default {
   .icon {
     stroke: currentColor;
     stroke-width: 1;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+    // stroke-linecap: round;
+    // stroke-linejoin: round;
     // fill: none;
 
     margin-right: 7px;

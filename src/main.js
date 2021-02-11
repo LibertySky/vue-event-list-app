@@ -34,7 +34,7 @@ requireComponent.keys().forEach((fileName) => {
 });
 
 // check&confirm components registration
-// console.log(requireComponent.keys());
+console.log(requireComponent.keys());
 
 Vue.config.productionTip = false;
 
