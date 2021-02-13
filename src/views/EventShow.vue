@@ -24,7 +24,7 @@ export default {
       event: {},
     };
   },
-  beforeMount() {
+  created() {
     EventService.getEvent(this.eventId)
       .then((res) => {
         this.event = res.data;
