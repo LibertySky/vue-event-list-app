@@ -15,10 +15,14 @@ export default new Vuex.Store({
 			{ id: 4, text: 'Some text 4', done: true },
 		],
 		events: [
-			{ id: 'e1', title: 'Beach cleanup', orginizer: 'Vi' },
-			{ id: 'e2', title: 'BBQ Party', orginizer: 'Vit' },
-			{ id: 'e3', title: 'Vue Bootcamp', orginizer: 'LibertySky' },
-			{ id: 'e4', title: 'Chess tournament', orginizer: 'Rafa' },
+			{ id: 'e1', title: 'Beach cleanup', orginizer: { id: 'a1', name: 'Vi' } },
+			{ id: 'e2', title: 'BBQ Party', orginizer: { id: 'a1', name: 'Vi' } },
+			{ id: 'e3', title: 'Vue Bootcamp', orginizer: { id: 'a1', name: 'Vi' } },
+			{
+				id: 'e4',
+				title: 'Chess tournament',
+				orginizer: { id: 'a1', name: 'Vi' },
+			},
 		],
 	},
 	getters: {
@@ -42,8 +46,9 @@ export default new Vuex.Store({
 	},
 	actions: {
 		createEvent({ commit }, event) {
-			EventService.postEvent(event);
-			commit('ADD_EVENT', event);
+			EventService.postEvent(event).then(() => {
+				commit('ADD_EVENT', event);
+			});
 		},
 	},
 	modules: {},

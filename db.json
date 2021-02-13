@@ -1,52 +1,106 @@
 {
-	"events": [
-		{
-			"id": 1,
-			"title": "Beach cleanup",
-			"date": "Jan 27 2021",
-			"time": "10:00",
-			"location": "Virginia Beach",
-			"description": "Let's clean up this beach",
-			"organizer": "Vi",
-			"category": "sustainability",
-			"attendees": [
-				{
-					"id": "abc123",
-					"name": "LibertySky"
-				},
-				{
-					"id": "abd124",
-					"name": "Sava"
-				}
-			]
-		},
-		{
-			"id": 2,
-			"title": "BBQ Party",
-			"date": "Jan 29 2021",
-			"time": "19:00",
-			"location": "Arenas del Caribe",
-			"description": "Let's make BBQ & swimming pool party",
-			"organizer": "LibertySky",
-			"category": "sustainability",
-			"attendees": [
-				{
-					"id": "abc123",
-					"name": "Blythe"
-				},
-				{
-					"id": "abd124",
-					"name": "Vi"
-				},
-				{
-					"id": "abe125",
-					"name": "Sava"
-				},
-				{
-					"id": "abf126",
-					"name": "Rocky"
-				}
-			]
-		}
-	]
+  "events": [
+    {
+      "id": 1,
+      "title": "Beach cleanup",
+      "date": "Jan 27 2021",
+      "time": "10:00",
+      "location": "Virginia Beach",
+      "description": "Let's clean up this beach",
+      "organizer": "Vi",
+      "category": "sustainability",
+      "attendees": [
+        {
+          "id": "abc123",
+          "name": "LibertySky"
+        },
+        {
+          "id": "abd124",
+          "name": "Sava"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "BBQ Party",
+      "date": "Jan 29 2021",
+      "time": "19:00",
+      "location": "Arenas del Caribe",
+      "description": "Let's make BBQ & swimming pool party",
+      "organizer": "LibertySky",
+      "category": "sustainability",
+      "attendees": [
+        {
+          "id": "abc123",
+          "name": "Blythe"
+        },
+        {
+          "id": "abd124",
+          "name": "Vi"
+        },
+        {
+          "id": "abe125",
+          "name": "Sava"
+        },
+        {
+          "id": "abf126",
+          "name": "Rocky"
+        }
+      ]
+    },
+    {
+      "id": 7783220,
+      "user": {
+        "id": "a1",
+        "name": "Vi"
+      },
+      "category": "food",
+      "organaizer": {
+        "id": "a1",
+        "name": "Vi"
+      },
+      "title": "Eat Food",
+      "description": "Cook and eat dinner",
+      "location": "",
+      "date": "2021-02-13T17:37:00.000Z",
+      "time": "17:00",
+      "attendees": []
+    },
+    {
+      "id": 9495128,
+      "user": {
+        "id": "a1",
+        "name": "Vi"
+      },
+      "category": "education",
+      "organaizer": {
+        "id": "a1",
+        "name": "Vi"
+      },
+      "title": "title",
+      "description": "sdcsadcvasdvasd",
+      "location": "Home",
+      "date": "2021-02-18T17:40:00.000Z",
+      "time": "13:00",
+      "attendees": []
+    },
+    {
+      "id": 9338666,
+      "user": {
+        "id": "a1",
+        "name": "Vi"
+      },
+      "category": "party",
+      "organaizer": {
+        "id": "a1",
+        "name": "Vi"
+      },
+      "title": "Some party",
+      "description": "Party desc",
+      "location": "local bar",
+      "date": "2021-02-18T18:11:00.000Z",
+      "time": "23:00",
+      "attendees": []
+    }
+  ]
 }

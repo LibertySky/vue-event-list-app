@@ -1,7 +1,7 @@
 <template>
   <div class="event">
     <h2>Event #{{ eventId }}: {{ event.title }}</h2>
-    <h4>Organized by {{ event.organizer }}</h4>
+    <h4>Organized by {{ event.organizer ? event.orginizer.name : "" }}</h4>
     <p>
       <em>Category: {{ event.category }}</em>
     </p>
