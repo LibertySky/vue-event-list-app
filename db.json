@@ -119,6 +119,24 @@
       "date": "2021-02-18T14:06:00.000Z",
       "time": "15:00",
       "attendees": []
+    },
+    {
+      "id": 307243,
+      "user": {
+        "id": "a1",
+        "name": "Vi"
+      },
+      "category": "education",
+      "organaizer": {
+        "id": "a1",
+        "name": "Vi"
+      },
+      "title": "Test ",
+      "description": "some desc",
+      "location": "somewhere",
+      "date": "2021-02-16T14:23:00.000Z",
+      "time": "17:00",
+      "attendees": []
     }
   ]
 }
