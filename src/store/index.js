@@ -14,16 +14,8 @@ export default new Vuex.Store({
 			{ id: 3, text: 'Some text 3', done: true },
 			{ id: 4, text: 'Some text 4', done: true },
 		],
-		events: [
-			{ id: 'e1', title: 'Beach cleanup', orginizer: { id: 'a1', name: 'Vi' } },
-			{ id: 'e2', title: 'BBQ Party', orginizer: { id: 'a1', name: 'Vi' } },
-			{ id: 'e3', title: 'Vue Bootcamp', orginizer: { id: 'a1', name: 'Vi' } },
-			{
-				id: 'e4',
-				title: 'Chess tournament',
-				orginizer: { id: 'a1', name: 'Vi' },
-			},
-		],
+		events: [],
+		eventsTotalCount: null,
 	},
 	getters: {
 		catLength: (state) => {
@@ -43,12 +35,26 @@ export default new Vuex.Store({
 		ADD_EVENT(state, event) {
 			state.events.push(event);
 		},
+		GET_EVENTS(state, events) {
+			state.events = events;
+		},
+		GET_TOTAL_EVENTS_COUNT(state, count) {
+			state.eventsTotalCount = count;
+		},
 	},
 	actions: {
 		createEvent({ commit }, event) {
 			EventService.postEvent(event).then(() => {
 				commit('ADD_EVENT', event);
 			});
+		},
+		fetchEvents({ commit }, { perPage, page }) {
+			EventService.getEvents(perPage, page)
+				.then((res) => {
+					commit('GET_TOTAL_EVENTS_COUNT', res.headers['x-total-count']);
+					commit('GET_EVENTS', res.data);
+				})
+				.catch((err) => console.log(err));
 		},
 	},
 	modules: {},

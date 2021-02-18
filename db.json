@@ -101,6 +101,24 @@
       "date": "2021-02-18T18:11:00.000Z",
       "time": "23:00",
       "attendees": []
+    },
+    {
+      "id": 4942911,
+      "user": {
+        "id": "a1",
+        "name": "Vi"
+      },
+      "category": "food",
+      "organaizer": {
+        "id": "a1",
+        "name": "Vi"
+      },
+      "title": "MEatballs party",
+      "description": "Lets make some swedish and italian meetbals",
+      "location": "home",
+      "date": "2021-02-18T14:06:00.000Z",
+      "time": "15:00",
+      "attendees": []
     }
   ]
 }
