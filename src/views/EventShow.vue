@@ -1,7 +1,9 @@
 <template>
   <div class="event">
     <h2>Event #{{ eventId }}: {{ event.title }}</h2>
-    <h4>Organized by {{ event.organizer ? event.orginizer.name : "" }}</h4>
+    <h4>
+      Organized by {{ event.organizer ? event.organizer.name : "Anonymous" }}
+    </h4>
     <p>
       <em>Category: {{ event.category }}</em>
     </p>
@@ -15,22 +17,15 @@
 </template>
 
 <script>
-import EventService from "@/services/EventService";
+import { mapState } from "vuex";
 
 export default {
   props: ["eventId"],
-  data() {
-    return {
-      event: {},
-    };
-  },
+
   created() {
-    EventService.getEvent(this.eventId)
-      .then((res) => {
-        this.event = res.data;
-      })
-      .catch((err) => console.log(err));
+    this.$store.dispatch("fetchEvent", this.eventId);
   },
+  computed: mapState(["event"]),
 };
 </script>
 

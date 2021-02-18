@@ -16,6 +16,7 @@ export default new Vuex.Store({
 		],
 		events: [],
 		eventsTotalCount: null,
+		event: {},
 	},
 	getters: {
 		catLength: (state) => {
@@ -41,6 +42,9 @@ export default new Vuex.Store({
 		GET_TOTAL_EVENTS_COUNT(state, count) {
 			state.eventsTotalCount = count;
 		},
+		SET_EVENT(state, event) {
+			state.event = event;
+		},
 	},
 	actions: {
 		createEvent({ commit }, event) {
@@ -55,6 +59,18 @@ export default new Vuex.Store({
 					commit('GET_EVENTS', res.data);
 				})
 				.catch((err) => console.log(err));
+		},
+		fetchEvent({ commit, getters }, id) {
+			let event = getters.getEventById(id);
+			if (event) {
+				commit('SET_EVENT', event);
+			} else {
+				EventService.getEvent(id)
+					.then((res) => {
+						commit('SET_EVENT', res.data);
+					})
+					.catch((err) => console.log(err));
+			}
 		},
 	},
 	modules: {},
