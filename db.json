@@ -137,6 +137,42 @@
       "date": "2021-02-16T14:23:00.000Z",
       "time": "17:00",
       "attendees": []
+    },
+    {
+      "id": 914757,
+      "user": {
+        "id": "a1",
+        "name": "Vi"
+      },
+      "category": "food",
+      "organaizer": {
+        "id": "a1",
+        "name": "Vi"
+      },
+      "title": "Test",
+      "description": "sdfasdcas",
+      "location": "dfasd",
+      "date": "2021-02-11T20:17:00.000Z",
+      "time": "16:00",
+      "attendees": []
+    },
+    {
+      "id": 5036240,
+      "user": {
+        "id": "a1",
+        "name": "Vi"
+      },
+      "category": "education",
+      "organaizer": {
+        "id": "a1",
+        "name": "Vi"
+      },
+      "title": "dcsdcsdc",
+      "description": "sdcsdcs",
+      "location": "sdcsdc",
+      "date": "2021-02-01T20:33:00.000Z",
+      "time": "17:00",
+      "attendees": []
     }
   ]
 }
