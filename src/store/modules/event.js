@@ -1,5 +1,5 @@
 // axios API calls
-import EventService from '../services/EventService';
+import EventService from '../../services/EventService';
 
 export const state = {
 	events: [],
