@@ -1,6 +1,8 @@
 // axios API calls
 import EventService from '../../services/EventService';
 
+export const namespaced = true;
+
 export const state = {
 	events: [],
 	eventsTotalCount: null,

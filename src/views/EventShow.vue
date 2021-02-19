@@ -23,7 +23,7 @@ export default {
   props: ["eventId"],
 
   created() {
-    this.$store.dispatch("fetchEvent", this.eventId);
+    this.$store.dispatch("event/fetchEvent", this.eventId);
   },
   computed: mapState({
     event: (state) => state.event.event,
