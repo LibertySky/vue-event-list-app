@@ -17,17 +17,18 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapState, mapActions } from "vuex";
 
 export default {
   props: ["eventId"],
 
   created() {
-    this.$store.dispatch("event/fetchEvent", this.eventId);
+    this.fetchEvent(this.eventId);
   },
   computed: mapState({
     event: (state) => state.event.event,
   }),
+  methods: mapActions("event", ["fetchEvent"]), //first argument "event" is NameSpace, second - array of Actions to map
 };
 </script>
 
